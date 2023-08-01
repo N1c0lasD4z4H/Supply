@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+:root{
+    --header:#000000ca;
+    --titu: #ffff;
+    --a: #ffff;
+    --A: #fcaeae;
+    --ini: #ff5e5e;
+    --button: #5077F8;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Marcellus' serif;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background: var(--header);
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.logo_title{
+    display: flex;
+    color: var(--titu);
+    align-items: center;
+}
+
+.logo img {
+    width: 3rem;
+    margin-right: 10px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: var(--titu);
+    font-size: 20px;
+    padding: 5px ;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover{
+    color: var(--A) ;
+}
+
+.navbar-button{
+    background-color:transparent;
+    border: none;
+    font-size: 1em;
+    background: var(--ini);
+    padding: 0.5rem;
+    color: var(--titu);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider{
+    overflow: hidden;
+    height: 35em;
+    margin: auto;
+}
+.slider ul{
+    display: flex;
+    width: 300%;
+    padding: 0;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 90%;
+}
+.reco{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.reco h1{
+    font-size: 3rem;
+    margin: 2em;
+}
+.cads{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.cad1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+.card {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid #080808;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(241, 185, 185, 0.1);
+    background-color: #f5dada;
+}
+
+.card img {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.card p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+.card button{
+    display: flex;
+    margin-top: 15px;
+    padding: 6px;
+    background: var(--button) ;
+    color: var(--titu);
+    border: 0;
+    border-radius: 10px;
+}
+
+.card .price {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.rosideal{
+    background-image: url(../img/florroja.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 35em;
+}
+
+.rosideal img{
+    width: 50%;
+}
+
+.rosideal h1{
+    color: var(--titu);
+    margin-top: 2em;
+}
+
+.ubicanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.ubicanos h1{
+    font-size: 3em;
+    margin: 20px;
+}
+
+.ubicanos iframe{
+    width: 100%;
+    height: 30em;
+}
+
+footer{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.conten{
+    width: 30%;
+}
+
+.conten  h1{
+    border-bottom: 2px solid var(--A);
+    color: var(--titu);
+}
+
+.list{
+    padding: 20px;
+}
+
+.list li{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.list a{
+    color: var(--titu);
+}
+
+.conte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--titu);
+    width: 30%;
+    height: 30%;
+}
+
+.conte img{
+    width: 30%;
+}
+
+.conte h1{
+    font-size: 40px;
+}
+
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+   
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -100%;}
+    100% { margin-left: -100%;}
+}
+
+
+@media (max-width:700px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: var(--header);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active{
+        height: 300px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        width: 90%;
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px ;
+    }
+
+    .slider{
+        height: auto;
+    }
+
+    .reco h1{
+        display: flex;
+        text-align: center;
+    }
+
+    .cads{
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .cad1{
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .rosideal{
+        height: 25em;
+    }
+
+    .rosideal img{
+        width: 70%;
+    }
+
+    .rosideal h1{
+        color:var(--header);
+    }
+
+    .card{
+        margin-top: 20px;
+    }
+
+    .conten{
+        width: 80%;
+    }
+    .conte{
+        display: none;
+    }
+}
