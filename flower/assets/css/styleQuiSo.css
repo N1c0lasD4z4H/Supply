@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+:root{
+  ----A: #fcaeae;
+  --header:#000000ca;
+  --titu: #ffff;
+  --a: #ffff;
+  --ini: #ff5e5e;
+  --button: #5077F8;
+  --A: #fcaeae;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  background: var(--header);
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+.logo_title{
+  display: flex;
+  color: var(--titu);
+  align-items: center;
+}
+
+.logo img {
+  width: 3rem;
+  margin-right: 10px;
+}
+
+.hamburger{
+  display: none;
+}
+
+.nav-bar ul{
+  display: flex
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: var(--titu);
+  font-size: 20px;
+  padding: 5px ;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover{
+  color: var(--A) ;
+}
+
+.navbar-button{
+  background-color:transparent;
+  border: none;
+  font-size: 1em;
+  background: var(--ini);
+  padding: 0.5rem;
+  color: var(--titu);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.uno{
+  background-image: url(../img/uno.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 35em;
+}
+.uno img{
+  width: 50%;
+}
+
+
+.quienes-So{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #ddd;
+}
+.pic{
+  height: auto;
+  width:  302px;
+}
+.somos{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background:var(----A);
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #000;
+}
+
+.origen{
+  background-image: url(../img/origen.jpeg);
+  background-size: 100% 100% ;
+  background-repeat: no-repeat;
+  height: 30em;
+}
+
+footer{
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.conten{
+  width: 30%;
+}
+
+.conten  h1{
+  border-bottom: 2px solid var(--A);
+  color: var(--titu);
+}
+
+.list{
+  padding: 20px;
+}
+
+.list li{
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.list a{
+  color: var(--titu);
+}
+
+.conte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--titu);
+  width: 30%;
+  height: 30%;
+}
+
+.conte img{
+  width: 30%;
+}
+
+.conte h1{
+  font-size: 40px;
+}
